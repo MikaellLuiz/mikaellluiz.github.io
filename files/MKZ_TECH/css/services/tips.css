@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #DCDCDC;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #005FC1;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #0754a0;
+  }
+body{
+    margin: 0;
+
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    align-items: center;
+    width: 100%;
+    background: #DCDCDC;
+    /* border: 1px solid red; */
+}
+
+#buttom-back{
+    flex: 33.3%;
+    padding-left: 20px;
+    /* border: rebeccapurple solid; */
+}
+
+#buttom-back img{
+    width: 40px;
+}
+
+.logo{
+    flex:33.3%;
+    text-align: right;
+    padding-right: 20px;
+    /* border: rebeccapurple solid; */
+}
+.logo img{
+    width: 60px;
+}
+
+.item-logo{
+    flex: 33.3%;
+    padding-right: 20px;
+    text-align: center;
+    /* border: rebeccapurple solid; */
+}
+
+.item-logo img{
+    height: 60px;
+}
+
+.list{
+    padding: 8%;
+    padding-top: 120px;
+    padding-bottom: 2%;
+    text-align: center;
+    width: 100%;
+    /* border: red solid 1px; */
+}
+.list ul{
+    padding: 0;
+}
+.list li{
+    display: flex;
+    padding: 2%;
+    margin-bottom: 1%;
+    border: black solid 1.5px;
+    border-radius: 10px;
+    /* border: red solid; */
+}
+.list a{
+    display: flex;
+    flex-flow: row nowrap;
+    text-decoration: none;
+    width: 100%;
+    color: black;
+    font-size: 20px;
+    /* border: red solid 1PX; */
+}
+.list p{
+    display: flex;
+    margin-top: 3%;
+    margin-left: 15%;
+}
+
+.list li:hover{
+    box-shadow: 0 0 10px black;
+}
+
+footer{
+    position: relative;
+    padding: 1%;
+    background: linear-gradient(to top, #6b6c6c, #DCDCDC ,#ffffff);
+}
+ 
+footer p{
+    text-align: center;
+    padding-top: 3%;
+}
+
+@media only screen and (max-width: 1000px){
+    .list img{
+        width: 40%;
+    }
+    .list a{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .list p{
+        margin: 0;
+    }
+}

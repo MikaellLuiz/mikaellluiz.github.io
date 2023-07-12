@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #DCDCDC;
+}
+  ::-webkit-scrollbar-thumb {
+    background-color: #005FC1;
+}
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #0754a0;
+}
+body{
+    margin: 0;
+
+}
+.navbar{
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #DCDCDC;
+    /* border: 1px solid red; */
+}
+.logo{
+    text-align: center;
+    /* border: rebeccapurple solid; */
+}
+.logo img{
+    height: 80px;
+}
+#button1{
+    text-align: right;
+    padding: 40px;
+}
+#button1 a{
+    text-align: center;
+    padding: 15px;
+    background: #005FC1;
+    border-radius: 50px;
+    transition: background 0.5s;
+    /* border:red solid; */
+}
+#button1 a{
+    font-weight: 600;
+    text-shadow: -1px 4px 4px rgba(0, 0, 0, 0.205);
+    text-decoration: none;
+    transition: backgound border 1s;
+    color: white;
+}
+#button1 a:hover{
+    background: #07427c;
+} 
+.header{
+    background: content-box;
+    /* border: red solid; */
+}
+.about-company{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.about-company iframe{
+    width: 100%;
+    height: 325px;
+}
+section{
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    /* border: red solid; */
+    
+}
+.button-2{
+    margin-top: 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 24%;
+    padding: 5%;
+    border: grey solid 2px;
+    transition: transform 0.5s;
+    cursor: pointer;
+    /* border: blue solid; */
+}
+.button-2 img{
+    width: 80px;
+    height: 100%;
+    /* border: red solid;    */
+}
+.button-2 a{
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    /* border: red solid; */
+}
+.button-2:hover{
+    box-shadow: 0 0 10px black;
+    transform: scale(1.025);
+}
+#button3{
+    text-align: center;
+    flex: 15%;
+    padding: 25px;
+    padding-left: 0;
+    padding-right: 30px;
+    margin-bottom: 3%;
+    /* border:blue solid; */
+}
+#button3 a{
+    font-weight: 600;
+    font-size: 18px;    
+    text-shadow: -1px 4px 4px rgba(0, 0, 0, 0.205);
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 60px;
+    transition: background 0.5s;
+    background: #6b6c6c;
+}
+#button3 a:hover{ 
+    cursor: pointer;
+    background: #494949;
+}
+.contact-us iframe{
+    position: fixed;
+    z-index: 2;
+    bottom: 12%;
+    right: 2.5%;
+    padding: 0;
+    width: 250px;
+    height: 280px;
+    border:#083b6b solid;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+
+}
+#button4{
+    position: fixed;
+    bottom: 2.5%;
+    right: 2.5%;
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: -1px 4px 4px rgba(0, 0, 0, 0.205);
+    color: white;
+    border:white solid;
+    border-radius: 60px;
+    transition: background 0.5s;
+    background: #6b6c6c;
+}
+#button4:hover{ 
+    cursor: pointer;
+    background: #07427c;
+
+}
+.about-company-button button{
+    width: 25%;
+    padding: 21px;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    margin-left: 36%;
+    margin-bottom: 2%;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: -1px 4px 4px rgba(0, 0, 0, 0.205);
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 60px;    
+    transition: background 0.5s;
+    background: #005FC1;
+
+}
+.about-company-button button:hover{
+    cursor: pointer;
+    background: #07427c;
+}
+footer{
+    position: relative;
+    padding: 1%;
+    background: linear-gradient(to top, #6b6c6c, #DCDCDC ,#ffffff);
+}
+footer p{
+    text-align: center;
+    padding-top: 3%;
+}
+
+@media only screen and (max-width: 768px) {
+    header{
+        padding-top: 10%;
+    }
+    #button1{
+        margin-left: 25%;
+    }
+    .headertop{
+        display: none;
+    }
+    .about-company iframe{
+        display: flex;
+        padding-bottom: 2%;
+        height: 450px;
+    }
+    section{
+        flex-flow: column wrap;
+        align-items: center;
+        padding-bottom: 8%;
+    }
+    .button-2{
+        width: 80%;         
+    }
+    
+}
+
+@media only screen and (min-width: 769px) {
+    header{
+        padding-top: 5%;
+    }
+    .headertop{
+        display: none;
+    }
+    section{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .logo{
+        flex: 30%;
+        padding-right: 20%;
+    }
+    #button1{
+        margin-right: 8%;
+        flex: 10%;
+    }
+
+    .about-company-button{
+        margin-top: 2%;
+
+    }
+}
+@media only screen and (min-width: 1366px) {
+    header{
+        padding-top: 2%;
+    }
+    .headertop-768px{
+        display: none;
+    }
+    .headertop{
+        display: flex;
+    }
+    #button1{
+        margin-right: 8%;
+        flex: 15%;
+    }
+
+    .about-company-button{
+        margin-top: 2%;
+    }
+    .logo{
+        flex: 20%;
+        padding-left: 5%;
+    }
+}

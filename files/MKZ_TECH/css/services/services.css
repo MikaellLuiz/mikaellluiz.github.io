@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #DCDCDC;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #005FC1;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #0754a0;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    align-items: center;
+    width: 100%;
+    background: #DCDCDC;
+    /* border: 1px solid red; */
+}
+
+#buttom-back{
+    flex: 33.3%;
+    padding-left: 20px;
+    /* border: rebeccapurple solid; */
+}
+
+#buttom-back img{
+    width: 40px;
+}
+
+.logo{
+    flex:33.3%;
+    text-align: right;
+    padding-right: 20px;
+    /* border: rebeccapurple solid; */
+}
+.logo img{
+    width: 60px;
+}
+
+.item-logo{
+    flex: 33.3%;
+    padding-right: 20px;
+    text-align: center;
+    /* border: rebeccapurple solid; */
+}
+
+.item-logo img{
+    width: 15%;
+}
+
+section{
+    padding-top: 140px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    /* border: red solid 1px */
+}
+
+.serv-item{
+    display: flex;
+    flex-flow:column wrap;
+    margin: 2px;
+    padding: 20px;
+    width: 34%;
+    border: grey solid 2px;
+    transition: transform 0.5s;
+}
+.serv-item:hover{
+    box-shadow: 0 0 10px black;
+    transform: scale(1.025);
+}
+.serv-item img{
+    max-height: 100%;
+    max-width: 50%;
+    margin-left: 25%;
+}
+
+.serv-item h2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    text-shadow: 0 0 3px #00000079;
+    /* border: red solid; */
+}
+#buttom-1{
+    z-index: 3;
+    text-align: center;
+    padding: 25px;
+    /* border:blue solid; */
+}
+
+#buttom-1 a{
+    font-weight: 600;
+    text-shadow: -1px 4px 4px rgba(0, 0, 0, 0.205);
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background: #005FC1;
+    padding: 25px;
+    padding-left: 15%;
+    padding-right: 15%;
+    border-radius: 60px;
+    transition: background 0.5s;
+}
+
+#buttom-1 a:hover{
+    cursor: pointer;
+    background: #083b6b;
+}
+
+footer{
+    width: 100%;
+    margin-top: 6%;
+    padding: 1%;
+    background: linear-gradient(to top, #6b6c6c, #DCDCDC ,#ffffff);
+}
+ 
+footer p{
+    text-align: center;
+    padding-top: 3%;
+}
+
+
+@media only screen and (max-width: 1050px){
+    footer{
+        margin-top: 20%;
+    }
+}

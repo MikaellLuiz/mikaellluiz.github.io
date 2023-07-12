@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="img/logo-semescrita.png" type="image/x-icon">
+    <title>Area do Cliente - Login</title> 
+</head>
+<body>
+    <div id="buttom-back"><a href="index.html"><img src="img/voltar.png"></a></div>
+
+    <div class="login">
+        <div class="login-submit">
+
+            <div class="login-logo">
+                <img src="img/logo-semescrita.png">
+            </div>
+
+            <h1>Bem Vindo!</h1>
+
+            <form>
+                <input type="text" id="username" name="username" placeholder="Usuário">
+                <br>
+                <input type="password" id="password" name="password" placeholder="Senha">
+                <br>
+                <input type="submit" value="Entrar">
+            </form>
+
+            <div class="link">
+                <button id="forgot">Esqueceu a Senha?</button>
+                <br>
+                <iframe style="display: none; "name="forgot-password" src="forgot_password.html" frameborder="0"></iframe>
+                <h2>Novo por aqui?</h2>
+                <a href="#">Cadastre-se</a>
+            </div>
+
+        </div>
+
+        <div class="login-background">
+            <img src="img/login-background.png">
+        </div>
+
+    </div>
+
+    <script>
+        var frame = document.getElementsByName("forgot-password")[0];
+        var button = document.getElementById("forgot");
+
+        button.addEventListener("click", function() {
+            if (frame.style.display == "none") {
+                frame.style.display = "flex";
+            } else {
+                frame.style.display = "none";
+            } 
+        });
+    </script>
+</body>
+</html>

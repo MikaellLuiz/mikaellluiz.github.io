@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:darkgrey; 
+  }
+  
+  .calculator {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #838383;
+    border-radius:25px;
+    background-color: black;
+    text-align: center;
+    box-shadow: 0 0 10px#4b4b4b;
+  } 
+  
+  #input{
+    width: 80%;
+  }
+  .calculator h2 {
+    color: white;
+    margin-top: 0;
+  }
+  
+  .calculator input[type="text"] {
+    width: 100%;
+    margin: 5px 0;
+    padding: 20px;
+    font-size: 20px;
+    text-align: right;
+    background: black;
+    color: white;
+    font-weight: 700;
+    border: #2c2c2c solid;
+    border-radius: 3px;
+  }
+  
+  .calculator input[type="button"] {
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    font-size: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: #3b3b3b;
+    cursor: pointer;
+    box-shadow: 0 0 2px #2c2c2c;
+  }
+  
+  .calculator input[type="button"]:hover {
+    background-color: #2c2c2c;
+  }
+  
+  .calculator input[type="button"]:active {
+    background-color: #5c5c5c;
+  }
+
+  #c{
+    color: red;
+    font-weight: 800;
+  }
+
+  .number{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(34, 147, 212);
+  }
+
+  .operation{
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(34, 212, 43);
+  }
+  

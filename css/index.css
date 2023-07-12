@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #DCDCDC;
+}
+  ::-webkit-scrollbar-thumb {
+    background-color: #474559;
+}
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #24232e;
+}
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+button:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Pagina inicial */
+#home{
+    background-image: url("../img/background.png");
+    background-position: center;
+    background-size:cover;
+    height: 100vh;
+    justify-items: center;
+    text-align: center;
+    animation: fade-in-animation 1s forwards;
+}
+.home{
+    position: relative;
+    top: 30%;
+}
+
+@keyframes fade-in-animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.home h1{
+    font-size: 50px;
+}
+.home span{
+    color: #13B1BB;
+}
+.home p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.home a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+.home button{
+    margin: 2.5%;
+    position: relative;
+    padding: 8px 20px 8px 20px;
+    border-radius: 50px;
+    border: none;
+    background: #474559;
+    transition: background 0.5s;
+    transition: box-shadow 0.5s;
+    animation: button-animation 1s forwards;
+    opacity: 0;
+    animation-delay: 0.25s;
+}
+@keyframes button-animation {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.home button:hover{
+    box-shadow:0 0 10px 0 #000000;
+    background: #393747;
+}
+
+/* Sobre min */
+
+#about{
+    padding: 7% 10% 7% 10%;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+.about{
+    justify-content: center;
+}
+.about h1{
+    color: #13B1BB;
+    font-size: 50px;
+    font-weight: 600;
+}
+.about h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about li{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* Experiencias */
+#experiences{
+    text-align: center;
+    flex-flow: column wrap;
+    padding: 7% 27% 7% 27%;
+    background-color: #DCDCDC;
+
+}
+#experiences h1{
+    font-size: 50px;
+    color: #13B1BB;
+    margin: 5% 0 10% 0;
+    
+}
+
+.exp_list ul {
+    padding: 0;
+    margin: 0;
+}
+
+.exp_list  li {
+    text-align: left;
+    list-style-type: none; 
+    position: relative;
+    padding-left: 40px;
+    line-height: 30px;
+}
+.animate-experience{
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.animate-experience-off{
+    animation: fade-in-slide 0.25s forwards
+}
+
+@keyframes fade-in-slide {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.exp_list  li:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 12px;
+    background-color: #474559;
+}
+
+.exp_list  li:first-child:before {
+    top: 10px;
+}
+
+.exp_list  li:last-child:before {
+    bottom: 10px;
+}
+
+.exp_list li span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #474559;
+    border: 6px solid #13B1BB;
+}
+
+#ult {
+    position: absolute;
+    left:11px;
+    top: 0;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 25px solid #474559;
+    transform: rotate(180deg);
+}
+
+.exp_list h2, .exp_list p{
+    margin-left: 45px;
+}
+.exp_list h1{
+    font-size: 20px;
+}
+.exp_list p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.bt_cv{
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+#bt_cv{
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    background: #13B1BB;
+    padding: 15px 25px 15px 25px;
+    border-radius: 40px;
+    border: none;
+    transition: background 0.5s;
+}
+#bt_cv:hover{
+    background: #1099a3;
+}
+
+/* Projetos */
+#projects{
+    background: white;
+    padding: 7% 15% 7% 15%;
+}
+.projects h1{
+    color: #474559;
+    text-align: center;
+    font-size: 50px;
+    margin: 0 0 5% 0; 
+}
+
+.projects_list{
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 18px;;
+    justify-content: center;
+    color: white;
+}
+.projects_list li{
+    list-style-type: none;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+    background-color: #6D6D6D;
+    width: 31%;
+    border-radius: 18px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.projects li:after{
+    position:absolute;
+    width:100%;
+    height:100%;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+}
+.projects li:hover{
+    box-shadow:0 0 10px 0 #000000;
+    transform:scale(1.05,1.05);
+}
+.projects_list img{
+    width: 100%;
+    border-radius: 18px;
+}
+.projects_list h2{
+    margin: 5%;
+    font-weight: 600;
+}
+.projects_list p{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    margin: 5%;
+}
+.project_bt{
+    justify-content: space-between;
+}
+.project_bt button{
+    margin: 2% 2% 0 2%;
+    color: white;
+    font-size: 80%;
+    width: 45%;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.project_bt1{
+    transition: background 0.5s;
+    background: #474559;
+}
+.project_bt1:hover{
+    background: #393747;
+}
+.project_bt2{
+    transition: background 0.5s;
+    background: #86868D;
+}
+.project_bt2:hover{
+    background: #7b7b81;
+}
+
+/* Contato */
+#contact{
+    flex-flow: column nowrap;
+    padding: 7% 15% 7% 15%;
+    background: #13B1BB;
+}
+.contact{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact h1{
+    color: white;
+    font-size: 50px;
+    margin: 0 0 7% 0; 
+}
+
+.contact button{
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 1%;
+    width: 45%;
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    background: #474559;
+    transition: background 0.5s;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.projects button:after{
+    position:absolute;
+    width:100%;
+    height:100%;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+}
+.contact button:hover{
+    cursor:default;
+    background: #393747;
+    box-shadow:0 0 5px 0 #000000;
+    transform:scale(1.025,1.025);
+}
+.contact a, .contact h2{
+    flex: 80%;
+    color: white;
+    align-items: l;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.contact img{
+    flex: 10%;
+    width: 40px;
+    margin-left: 2%;
+}
+
+footer{
+    flex-flow: column nowrap;
+    text-align: center;
+    background: #474559;
+    padding: 2%
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+footer h1, footer p{
+    color: white;
+    margin-bottom: 2%;
+}
+
+.nav ul{
+    justify-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    margin-bottom: 2%;
+}
+.nav li{
+    padding: 7px 15px 7px 15px;
+    margin: 3px;
+    background: #86868D;
+    border-radius: 25px;
+    transition: background 0.5s;  
+}
+.nav li:hover{
+    cursor: pointer;
+    background: #7b7b81;
+}
+
+footer img{
+    width: 50px;
+    margin: 0 0.5% 1% 0.5%; 
+} 
+
+#about, #experiences, #projects, #contact, footer{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    /* Pagina inicial */
+
+    #home{
+        background-image: url("../img/background_s.png");
+    }
+    .home{
+        top: 40%;
+    }
+    .home h1{
+        font-size: 35px;
+    }
+    .home p{
+        font-size: 16px;
+    }
+    .home a{
+        font-size: 14px;
+    }
+
+    /* Sobre min */
+    #about{
+        padding: 20% 5% 20% 5%;
+        text-align: center;
+        flex-flow: column-reverse;
+    }
+    .about h1{
+        font-size: 40px;
+    }
+    .about h2{
+        font-size: 25px;
+        margin-bottom: 10%;
+    }
+    .about li{
+        text-align: left;
+    }
+    .about_photo{
+        margin: 5% 0 10% 0;
+    }
+    .about_photo img{
+        width: 75%;
+    }
+
+    /* experiencias */
+
+    #experiences{
+        padding: 15% 10% 10% 10%;
+    }
+    #experiences h1{
+        font-size: 40px;
+        margin-bottom: 15%;
+    }
+    .exp_list{
+        padding: 0;
+    }
+    .exp_list li{
+        padding: 0;
+    }
+    .exp_list p{
+        font-size: 15px;
+    }
+
+    /* Projetos */
+    #projects{
+        padding: 20% 10% 25% 10%;
+    }
+    #projects h1{
+        font-size: 40px;
+        margin-bottom: 15%;
+    }
+
+    .projects_list{
+        align-items: center;
+        padding: 0;
+        flex-flow: column wrap;
+    }
+    .projects_list li{
+        margin: 3%;
+        padding: 5%;
+        width: 75%;
+        justify-content: center;
+    }
+    .project_bt {
+        flex-flow: column wrap;
+    }
+    .project_bt button{
+        width: 85%;
+        font-size: 100%;
+        margin: 3%;
+    }
+
+    /* Contato */
+    #contact{
+        padding: 8%;
+    }
+    .contact {
+        padding: 0;
+    }
+    .contact button{
+        width: 95%;
+        margin: 3%;
+    }
+    .contact_button{
+        flex-flow: column wrap;
+    }
+    .contact a, .contact h2{
+        font-size: 15px;
+    }
+
+    /* Rodapé */
+    footer{
+        padding: 10%;
+    }
+    .nav{
+        margin-bottom: 3%;
+        font-size: 13px;
+    }
+    .nav ul{
+        flex-flow: row wrap;
+        padding: 0;
+    }
+    .nav li{
+        width: 30%;
+        padding: 10px 5px 10px 5px;
+        margin: 1.5%;
+    }
+    .nav p{
+        padding: 2%;
+
+    }
+
+
+  }
+
+  @media (min-width: 601px) and (max-width: 900px) {
+    /* Pagina Inicial */
+    #home{
+        background-image: url("../img/background_m.png");
+    }
+    .home{
+        top: 35%;
+    }
+    .home h1{
+        font-size: 45px;
+    }
+    .home p{
+        font-size: 20px;
+    }
+    .home button{
+        padding: 10px 20px 10px 20px;
+    }
+    .home a{
+        font-size: 18px;
+    }
+
+    /*Sobre min*/
+    #about{
+        padding: 10% 15% 10% 15%;
+        text-align: center;
+        flex-flow: column-reverse;
+    }
+    .about h1{
+        font-size: 40px;
+    }
+    .about h2{
+        font-size: 25px;
+        margin-bottom: 10%;
+    }
+    .about li{
+        font-size: 18px;
+        text-align: left;
+    }
+    .about_photo{
+        margin: 5%
+    }
+    .about_photo img{
+        width: 65%;
+    }
+    /* Experiencias */
+    #experiences{
+        padding: 7% 15% 15% 15%;
+    }
+    #experiences h1{
+        font-size: 40px;
+    }
+    .exp_list h2{
+        font-size: 22px;
+    }
+    .exp_list p{
+        font-size: 18px;        
+    }
+    
+    /* Projetos */
+    #projects{
+        padding: 10% 10% 15% 10%;
+    }
+    #projects h1{
+        font-size: 40px;
+    }
+    .projects_list{
+        align-items: center;
+        padding: 0;
+        flex-flow: row wrap;
+    }
+    .projects_list li{
+        margin: 2%;
+        padding: 3%;
+        width: 45%;
+        justify-content: center;
+    }
+    .project_bt {
+        flex-flow: column wrap;
+    }
+    .project_bt button{
+        width: 90%;
+        font-size: 100%;
+        margin: 3%;
+    }
+    .projects p{
+        font-size: 16px;
+    }
+    .project_bt h2{
+        font-size: 22px;
+    }
+    /* Contato */
+    #contact{
+        padding: 8% 17% 8% 17%;
+    }
+    #contact h1{
+        font-size: 40px;
+    }
+    .contact {
+        padding: 0;
+    }
+    .contact button{
+        width: 95%;
+        margin: 1%;
+    }
+    .contact_button{
+        flex-flow: column wrap;
+    }
+    .contact a, .contact h2{
+        font-size: 16px;
+    }
+    /* Navegue */
+    footer{
+        padding: 5% 10% 5% 10%;
+    }
+    footer h1{
+        font-size: 30px;
+    }
+    .nav ul{
+        flex-flow: row wrap;
+        padding: 0;
+    }
+    .nav li{
+        width: 22%;
+        padding: 8px 5px 5px 8px;
+        margin: 0.5%;
+    }
+    .nav p{
+        padding: 2%;
+    }
+    .nav a{
+        font-size: 16px;
+    }
+  }

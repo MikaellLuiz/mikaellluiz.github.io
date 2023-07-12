@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #DCDCDC;
+}
+  ::-webkit-scrollbar-thumb {
+    background-color: #005FC1;
+}
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #0754a0;
+}
+
+body{
+    margin: 0;
+
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    align-items: center;
+    width: 100%;
+    background: #DCDCDC;
+    /* border: 1px solid red; */
+}
+
+#buttom-back{
+    flex: 33.3%;
+    padding-left: 20px;
+    /* border: rebeccapurple solid; */
+}
+#buttom-back img{
+    width: 40px;
+}
+.logo{
+    flex:33.3%;
+    text-align: right;
+    padding-right: 20px;
+    /* border: rebeccapurple solid; */
+}
+.logo img{
+    width:60px;
+}
+
+.item-logo{
+    flex: 33.3%;
+    padding-right: 20px;
+    text-align: center;
+    /* border: rebeccapurple solid; */
+}
+
+.item-logo img{
+    height: 60px;
+}
+
+section{
+    padding-top:120px;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* border: red solid 1px; */
+}
+.form{
+    background: #DCDCDC;
+    border-radius: 10px 10px 0 0;
+}
+.form-top{
+    font-weight: 500;
+    padding: 3px;
+    text-shadow: -1px 4px 4px rgba(167, 167, 167, 0.205);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background: #0059B6;
+    border-radius: 10px 10px 0 0;
+}
+
+.form-submit{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10%;
+    padding-top: 5%;
+}
+
+.form-submit form{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+label{
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+input[type="text"],input[type="file"]{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+select{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+select:hover{
+    cursor: pointer;
+    background: #ececec;
+}
+#description{
+    border-radius: 5px;
+    border: none;
+}
+textarea{
+    resize: vertical;
+}
+input[type="submit"]{
+    margin: 10px;
+    padding: 15px;
+    background: #0059B6;
+    color: white;
+    font-size: 20px;
+    text-shadow: -1px 4px 4px rgba(0, 0, 0, 0.205);
+    border-radius: 5px;
+    border: none;
+    transition: background 0.5s;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    background: #083b6b;
+}

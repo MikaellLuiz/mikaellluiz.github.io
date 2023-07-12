@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mikael Luiz">
+    <meta name="description" content="Assistencia Tecnica MKZ TECH de Campo Florido">
+    <meta name="keywords" content="Assistencia Tecnica, Campo Florido, Manutenção, celular, notebook">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/logo-semescrita.png" type="image/x-icon">
+    <title>MKZ TECH</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/Logo.png">
+        </div>
+        <div id="button1">
+            <a href="login.html">Area do Cliente</a>
+        </div>        
+    </nav>
+ 
+<!--Utlizei duas imagens nesta parte, para somente uma delas aparecer dependendo do tamanho da tela-->
+    <header id="top">
+        <div id="header" class="header">
+            <img class="headertop" src="img/headertop.png" alt="">
+            <img class="headertop-768px" src="img/headertop-768px.png" alt="">
+        </div>
+        <div  style="display: none" class="about-company" name="about-company-bottom">
+            <iframe src="about_company.html" frameborder="0"></iframe>
+        </div>
+    </header>
+
+    <section>
+            <div class="button-2">
+                <a href="services/services.html"><img src="img/servico-icon.png" title="Service icons created by iconnut - Flaticon"><br>serviços</a>
+            </div>
+            <div class="button-2">
+                <a href="services/products.html"><img src="img/produtos-icon.png" title="Smart cart icons created by Freepik - Flaticon"><br>Produtos</a>
+            </div>
+            <div class="button-2">   
+                <a href="services/tips.html"><img src="img/dicas-icon.png" title="Idéia ícones criados por Freepik - Flaticon"><br>Dicas</a>
+            </div>
+    </section>
+
+    <div class="contact-us">
+        <iframe style="display: none" src="contact_us.html" frameborder="1" name="contact_us"></iframe>
+    </div>
+    <button id="button4" >Fale Conosco</a></button>
+    
+
+    <div class="about-company-button">
+        <button onclick="irParaSecao()" id= "about-company-button">Sobre nós</button>
+    </div>
+    
+    <div id="button3">
+        <a href="about_author.html">Sobre o Autor</a>
+    </div>
+    
+    <footer>
+        <p>Created by Mikael Luiz <br>Copyright © 2023, Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        var frame2 = document.getElementsByName("contact_us")[0];
+        var button2 = document.getElementById("button4");
+
+        button2.addEventListener("click", function() {
+            if (frame2.style.display == "none") {
+                frame2.style.display = "flex";
+            } else {
+                frame2.style.display = "none";
+            } 
+        });
+
+        var div3 = document.getElementById("header");
+        var frame3 = document.getElementsByName("about-company-bottom")[0];
+        var button3 = document.getElementById("about-company-button");
+
+        button3.addEventListener("click", function() {
+            if (frame3.style.display == "none") {
+                frame3.style.display = "flex";
+                div3.style.display = "none";
+            } else {
+                frame3.style.display = "none";
+                div3.style.display = "flex";
+            } 
+        });
+        window.onload = function() {
+            var button = document.getElementById("about-company-button");
+            button.addEventListener("click", function() {
+                var destino = document.querySelector("#top");
+                destino.scrollIntoView({ behavior: "smooth" });
+            });
+        };
+
+    </script>
+</body>
+</html>

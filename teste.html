@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 40px;
+            line-height: 30px;
+        }
+
+        ul li:before {
+            content: "";
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 12px;
+            background-color: #474559;
+        }
+
+        ul li:first-child:before {
+            top: 10px;
+        }
+
+        ul li:last-child:before {
+            bottom: 10px;
+        }
+
+        ul li span {
+            position: absolute;
+            left: 10px;
+            top: 0;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #474559;
+            border: 6px solid #13B1BB;
+        }
+
+        #ult {
+            position: absolute;
+            left:11px;
+            top: 0;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 25px solid #474559;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <ul>
+        <li><span></span>Item 1<br><br><br></li>
+        <li><span></span>Item 2<br><br><br></li>
+        <li><span></span>Item 3<br><br><br></li>
+        <li><span></span>Item 4<br><br><br></li>
+        <li><span></span>Item 5<br><br><br></li>
+        <li><div id="ult"></div></li>
+    </ul>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .exemplo{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            margin: 20px, 20px, 20px, 20px;
+        }
+        .wisth-height{
+            width: 100px;
+            height: 150px;
+            background-color: black;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav_bar"></div>
+    <p id="teste"></p>
+    <p>
+        <script>
+            document.write('Escrito com docuent.write');
+        </script>
+    </p>
+</body>
+</html>

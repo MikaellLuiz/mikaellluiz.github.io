@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <br>
+    <h2>Calculadora</h2>
+    <form name="form">
+      <input type="text" name="textview" readonly id="input"><br><br>
+
+      <input class="number" type="button" value="7" onclick="insert('7')">
+      <input class="number" type="button" value="8" onclick="insert('8')">
+      <input class="number" type="button" value="9" onclick="insert('9')">
+      <input class="operation" type="button" value="/" onclick="insert('/')"><br>
+
+      <input class="number" type="button" value="4" onclick="insert('4')">
+      <input class="number" type="button" value="5" onclick="insert('5')">
+      <input class="number" type="button" value="6" onclick="insert('6')">
+      <input class="operation" type="button" value="*" onclick="insert('*')"><br>
+
+      <input class="number" type="button" value="1" onclick="insert('1')">
+      <input class="number" type="button" value="2" onclick="insert('2')">
+      <input class="number" type="button" value="3" onclick="insert('3')">
+      <input class="operation" type="button" value="-" onclick="insert('-')"><br>
+
+      <input class="number" type="button" value="0" onclick="insert('0')">
+      <input class="number" type="button" value="%" onclick="insert('%')">
+      <input class="number" type="button" value="=" onclick="calculate()">
+      <input class="operation" type="button" value="+" onclick="insert('+')"><br>
+
+      <input class="clean" type="button" value="C" onclick="clearScreen()" id="c">
+      <br>
+      <br>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
